@@ -189,7 +189,6 @@ nThen(function (w) {
         monitoring.ws = stats.total;
         monitoring.channels = Server.getActiveChannelCount();
         monitoring.registered = Object.keys(Env.netfluxUsers).length;
-        let blobs = Env.monitoring?.upload
         // Send updated values
         Monitoring.applyToEnv(Env, monitoring);
         broadcast('MONITORING', Env.monitoring);
