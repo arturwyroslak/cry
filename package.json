@@ -22,7 +22,7 @@
     "chainpad-crypto": "^0.2.5",
     "chainpad-listmap": "^1.0.0",
     "chainpad-netflux": "^1.0.0",
-    "chainpad-server": "^5.2.0",
+    "chainpad-server": "^5.2.1",
     "ckeditor": "npm:ckeditor4@~4.22.1",
     "codemirror": "^5.19.0",
     "components-font-awesome": "^4.6.3",
@@ -50,6 +50,7 @@
     "open-sans-fontface": "^1.4.0",
     "openid-client": "^5.4.2",
     "pako": "^2.1.0",
+    "prom-client": "^14.2.0",
     "prompt-confirm": "^2.0.4",
     "pull-stream": "^3.6.1",
     "require-css": "0.1.10",
@@ -98,5 +99,7 @@
     "clear": "node scripts/clear.js",
     "installtoken": "node scripts/install.js"
   },
-  "browserslist": ["> 0.5%, last 2 versions, Firefox ESR, not dead, not op_mini all"]
+  "browserslist": [
+    "> 0.5%, last 2 versions, Firefox ESR, not dead, not op_mini all"
+  ]
 }
