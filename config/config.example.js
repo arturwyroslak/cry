@@ -2,8 +2,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-/* globals module */
-
 /*  DISCLAIMER:
 
     There are two recommended methods of running a CryptPad instance:
@@ -89,9 +87,10 @@ module.exports = {
  */
     //httpPort: 3000,
 
-/*  httpSafePort allows you to specify an alternative port from which
- *  the node process should serve sandboxed assets. The default value is
- *  that of your httpPort + 1. You probably don't need to change this.
+/*  httpSafePort purpose is to emulate another origin for the sandbox when
+ *  you don't have two domains at hand (i.e. when httpSafeOrigin not defined).
+ *  It is meant to be used only in case where you are working on a local 
+ *  development instance. The default value is your httpPort + 1.
  *
  */
     //httpSafePort: 3001,
@@ -192,7 +191,7 @@ module.exports = {
      *  This archived data still takes up space and so you'll probably still want to
      *  remove these files after a brief period.
      *
-     *  cryptpad/scripts/evict-inactive.js is intended to be run daily
+     *  cryptpad/scripts/evict-archived.js is intended to be run daily
      *  from a crontab or similar scheduling service.
      *
      *  The intent with this feature is to provide a safety net in case of accidental
