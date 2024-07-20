@@ -69,7 +69,7 @@ module.exports = {
  *
  *  CUSTOMIZE AND UNCOMMENT THIS FOR PRODUCTION INSTALLATIONS.
  */
-    httpSafeOrigin: "https://cry-one.vercel.app",
+    // httpSafeOrigin: "https://some-other-domain.xyz",
 
 /*  httpAddress specifies the address on which the nodejs server
  *  should be accessible. By default it will listen on localhost
@@ -77,7 +77,7 @@ module.exports = {
  *  a specific address, specify it here. e.g '192.168.0.1'
  *
  */
-    httpAddress: 'localhost',
+    httpAddress: '127.0.0.1',
 
 /*  httpPort specifies on which port the nodejs server should listen.
  *  By default it will serve content over port 3000, which is suitable
