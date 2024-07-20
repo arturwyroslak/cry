@@ -77,7 +77,7 @@ module.exports = {
  *  a specific address, specify it here. e.g '192.168.0.1'
  *
  */
-    //httpAddress: 'localhost',
+    httpAddress: 'localhost',
 
 /*  httpPort specifies on which port the nodejs server should listen.
  *  By default it will serve content over port 3000, which is suitable
@@ -85,7 +85,7 @@ module.exports = {
  *  which will proxy websocket traffic to your node server.
  *
  */
-    //httpPort: 3000,
+    httpPort: 3000,
 
 /*  httpSafePort purpose is to emulate another origin for the sandbox when
  *  you don't have two domains at hand (i.e. when httpSafeOrigin not defined).
