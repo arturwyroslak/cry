@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["config/**", "scripts/**", "www/**"]
+      }
+    }
+  ],
+  "scripts": {
+    "build": "npm run install:components && npm run build"
+  }
+}
