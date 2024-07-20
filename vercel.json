@@ -7,8 +7,5 @@
         "includeFiles": ["config/**", "scripts/**", "www/**"]
       }
     }
-  ],
-  "scripts": {
-    "build": "npm run install:components && npm run build"
-  }
+  ]
 }
