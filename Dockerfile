@@ -19,10 +19,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 # Copy cryptpad with installed modules
 COPY --from=build --chown=cryptpad /cryptpad /cryptpad
 USER cryptpad
-
-# Copy docker-entrypoint.sh script
-COPY --chown=cryptpad docker-entrypoint.sh /cryptpad/docker-entrypoint.sh
-
 # Set workdir to cryptpad
 WORKDIR /cryptpad
 # Create directories
