@@ -48,7 +48,7 @@ module.exports = {
  *  cryptpad/docs/example.nginx.conf (see the $main_domain variable)
  *
  */
-    httpUnsafeOrigin: 'https://cry-one.vercel.app',
+    httpUnsafeOrigin: 'http://localhost:3000/',
 
 /*  httpSafeOrigin is the URL that is used for the 'sandbox' described above.
  *  If you're testing or developing with CryptPad on your local machine then
@@ -77,7 +77,7 @@ module.exports = {
  *  a specific address, specify it here. e.g '192.168.0.1'
  *
  */
-    httpAddress: '127.0.0.1',
+    httpAddress: 'localhost',
 
 /*  httpPort specifies on which port the nodejs server should listen.
  *  By default it will serve content over port 3000, which is suitable
