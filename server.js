@@ -345,7 +345,7 @@ app.use(function (err, req, res) {
 });
 
 var httpServer = Env.httpServer = Http.createServer(app);
-
+app.listen(3000, () => console.log(`Listening to port ${port}`));
 nThen(function (w) {
     Fs.exists(Path.resolve("customize"), w(function (e) {
         if (e) { return; }
