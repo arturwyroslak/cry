@@ -7,6 +7,11 @@
     }
   ],
   "routes": [
+    { "src": "/blob/(.*)", "dest": "/blob/$1" },
+    { "src": "/datastore/(.*)", "dest": "/datastore/$1" },
+    { "src": "/block/(.*)", "dest": "/block/$1" },
+    { "src": "/customize/(.*)", "dest": "/customize/$1" },
+    { "src": "/customize.dist/(.*)", "dest": "/customize.dist/$1" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
