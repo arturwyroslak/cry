@@ -1,0 +1,30 @@
+{
+  "name": "chainpad",
+  "description": "Realtime Collaborative Editor Algorithm based on the Nakamoto BlockChain",
+  "version": "5.2.7",
+  "main": "chainpad.dist.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwiki-contrib/chainpad"
+  },
+  "dependencies": {
+    "fast-diff": "^1.1.2",
+    "gluejs": "~2.4.0",
+    "json.sortify": "^2.2.2",
+    "nthen": "^0.1.5",
+    "xmhell": "~0.1.2"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.42.0",
+    "jshint": "~2.13.4"
+  },
+  "overrides": {
+    "minimist": "~1.2.3",
+    "minimatch": "~3.0.8"
+  },
+  "scripts": {
+    "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
+    "flow": "./node_modules/.bin/flow",
+    "test": "node ./test.js"
+  }
+}

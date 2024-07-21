@@ -1,0 +1,26 @@
+{
+  "name": "chainpad-netflux",
+  "version": "1.2.0",
+  "description": "A convenient wrapper around the chainpad realtime engine and the netflux transport API",
+  "main": "chainpad-netflux.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint --config .jshintrc --exclude-path .jshintignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptpad/chainpad-netflux.git"
+  },
+  "author": "",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/cryptpad/chainpad-netflux/issues"
+  },
+  "homepage": "https://github.com/cryptpad/chainpad-netflux#readme",
+  "devDependencies": {
+    "jshint": "^2.13.4"
+  },
+  "dependencies": {
+    "netflux-websocket": "^1.2.0"
+  }
+}
